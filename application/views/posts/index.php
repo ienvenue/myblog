@@ -81,13 +81,13 @@
             <div class="form-group">
                 <label for="inputName" class="col-sm-2 control-label">Your name</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" name="inputName" placeholder="John Chen">
+                    <input type="text" class="form-control" name="name" placeholder="John Chen">
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputWords" class="col-sm-2 control-label">Your words</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" name="inputWords" placeholder="happy hacking">
+                    <input type="text" class="form-control" name="words" placeholder="happy hacking">
 
                 </div>
             </div>
@@ -100,8 +100,9 @@
         <div class="row">
             <div class="messages-list col-sm-offset-1 col-sm-8">
                 <div class="media">
-                    <div class="media-left"> <h4>Name:</h4> </div>
-                    <div class="media-body"> <h4>words</h4> </div>
+                    <div class="media-left"> <h4><?php echo $name ?> </h4> </div>
+                    <div class="media-left  "> <h4>:  </h4> </div>
+                    <div class="media-body"> <h4><?php echo $words ?></h4> </div>
                 </div>
             </div>
         </div>
